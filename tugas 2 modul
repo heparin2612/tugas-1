@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title>melakukan formating paragraf</title>
+<body>
+	<p> paragraf pertama </p>
+	<p></p>
+	<P align="center"> paragraf kedua </P>
+	<p align="center"> peragraf kedua ini reta tengah </p>
+	<p></p>
+	<p align="right"> paragraf ketiga </p>
+	<p align="right"> paragraf ketiga ini menggunkan rata kanan </p>
+
+</body>
+</html>
