@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>penggunaan line braek</title>
+</head>
+<body>
+	Menggunakan line break <br><br>
+	dengan menggunakan line, kita dapat memindahkan kalimat<br>
+	setelah elemen tersebut satu bari dibawahnya.<br>
+	seperti menggunakan ENTER pada word processing.
+</body>
+</html>
