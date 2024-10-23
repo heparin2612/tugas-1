@@ -1,0 +1,23 @@
+<html>
+ <head>
+ 	<title>Melakukan format penulisan </title>
+ </head>
+ <body>
+ 	<!--membuat Tulisan menjadi tebal --> 
+ 	<b> tulisan di cetak tebal </b>
+ 	<p>
+ 	<!--membuat tulisan tertulis miring -->
+ 	<i> tulisan ini telah di cetak miring </i>
+ 	<p>
+ 	<!--membuat tulisan bergaris bawah -->
+ 	<u> tulisan ini dicetak bergaris bawah </u>
+ 	<!--membuat format superscript-->
+ 	dalam matematika , x pangkat 2 tulisan dengan x <sup>2</sup>
+ 	<p>
+ 	<!--membuat format subscript -->
+ 	Rumus kimia buat oksigen adalah O <sub>2</sub>
+
+
+
+	</body>
+</html>
