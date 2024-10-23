@@ -1,0 +1,36 @@
+<html>
+ 	<head>
+ 		<title> menggunakan orderan list</title>
+ 	</head>
+ 	<body>/
+		<h3> Menggunkan Orderan List </h3>
+		<hr>
+		<h4> Orderan list menggunkan Type Default </h4>
+		<ol>
+			<li> Agung Nugroho </li>
+			<li> Bernadhed </li>
+			<li> Mulya Sulistyono</li>	
+		</ol>
+
+		<h4> Orderan List Menggunkan Type a </h4>
+		<ol type="a">
+			<li> Agung Nugroho </li>
+			<li> Bernadhed </li>
+			<li> Mulya Sulistyono</li>	
+		</ol>
+
+		<h4> Orderan List Menggunakan Type I </h4>
+		<ol type="I">
+			<li> Agung Nugroho </li>
+			<li> Bernadhed </li>
+			<li> Mulya Sulistyono</li>	
+		</ol>
+
+		<h4> Orderan List Menggunkan Type Atribut Strat </h4>
+		<ol start="14">
+			<li> Agung Nugroho </li>
+			<li> Bernadhed </li>
+			<li> Mulya Sulistyono</li>	
+		</ol>
+	</body>
+</html>
