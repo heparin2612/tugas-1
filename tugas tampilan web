@@ -1,0 +1,70 @@
+<html>
+<body>
+	<title>table</title>
+
+</head>
+<body>
+<table border="1" wwidht="100">
+<tr>
+	<th width="5%">No</th>
+	<th width="20">kelas</th>
+	<th>matakuliah</th>
+	<th widht=5%>sks</th>
+</tr>
+<tr>
+	<td>1</td>
+	<td>SI - V -A</td>
+    <td>pemr web</td>
+	<td>4</td>
+</tr>
+</table>
+
+<table style="color:red" border="1" bgcolor="aqua" width="100">
+	<tr>
+		<td colspan="2" height="50px" align="center">header</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="25%" align="center">navigation</td>
+	</tr>
+	<tr>
+		<td align="center" height="200px">sidebar</td>
+		<td align="center">content</td>
+	</tr>
+	<tr>
+		<td rowspan="2">iklan</td>
+		<td> iklan 1</td>
+	</tr>
+	<tr>
+		<td>iklan 2 </td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">footer</td>
+	</tr>
+</body>
+</table>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
