@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulir Aplikasi Rekening Perorangan</title>
+
+</style>
+</head>
+<body>
+
+<h2>Formulir Aplikasi Rekening Perorangan (AR-01)</h2>
+
+<p>Diisi oleh Bank</p>
+
+<h3>CIF</h3>
+
+<div class="container">
+  <h3>1. DATA NASABAH</h3>
+  <h4>DATA PRIBADI</h4>
+  <div class="form-group">
+    <label for="nama_lengkap">Nama lengkap:</label>
+    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+  </div>
+  <div class="form-group">
+    <label for="tempat_lahir">Tempat lahir:</label>
+    <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+  </div>
+  <div class="form-group">
+    <label for="tanggal_lahir">Tanggal lahir:</label>
+    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+  </div>
+  <div class="form-group">
+    <label for="Nama_gadis_ibu_kandung">nama gadis ibu kandung:</label>
+    <input type="text" id="Nama_gadis_ibu_kandung" name="Nama_gadis_ibu_kandung" required>
+  </div>
+
+
+  <div class="form-group">
+    <label for="alamat">Alamat:</label>
+    <input type="text" id="alamat" name="alamat" required>
+  </div>
+  <div class="form-group">
+    <label for="nomor_telepon">Nomor telepon:</label>
+    <input type="text" id="nomor_telepon" name="nomor_telepon" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+</div>
+
+<div class="container">
+  <h3>2. DATA REKENING</h3>
+  <div class="form-group">
+    <label for="tipe_rekening">Tipe rekening:</label>
+    <select id="tipe_rekening" name="tipe_rekening" required>
+      <option value="tabungan">Tabungan</option>
+      <option value="giro">Giro</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="setoran_awal">Setoran awal:</label>
+    <input type="number" id="setoran_awal" name="setoran_awal" required>
+  </div>
+</div>
+
+<div class="form-group">
+  <input type="checkbox" id="syarat" name="syarat" required>
+  <label for="syarat">Saya setuju dengan syarat dan ketentuan yang berlaku.</label>
+</div>
+
+</body>
+</html>
