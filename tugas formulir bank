@@ -1,71 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Formulir Aplikasi Rekening Perorangan</title>
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Aplikasi Rekening BRI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #e6f4f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 12px;
+        }
+        .header {
+            background-color: #00498e;
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .sub-header {
+            background-color: #f08200;
+            color: #fff;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .form-table th, .form-table td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .form-table th {
+            background-color: #d3ebf9;
+            font-weight: bold;
+            text-align: left;
+            width: 25%;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+            padding: 5px 0;
+        }
+        .section-title {
+            font-weight: bold;
+            padding: 8px;
+            margin: 15px 0 8px;
+            background-color: #f08200;
+            color: white;
+            text-align: left;
+        }
+        .notes {
+            font-size: 10px;
+            color: #555;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Formulir Aplikasi Rekening Perorangan (AR-01)</h2>
-
-<p>Diisi oleh Bank</p>
-
-<h3>CIF</h3>
-
 <div class="container">
-  <h3>1. DATA NASABAH</h3>
-  <h4>DATA PRIBADI</h4>
-  <div class="form-group">
-    <label for="nama_lengkap">Nama lengkap:</label>
-    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
-  </div>
-  <div class="form-group">
-    <label for="tempat_lahir">Tempat lahir:</label>
-    <input type="text" id="tempat_lahir" name="tempat_lahir" required>
-  </div>
-  <div class="form-group">
-    <label for="tanggal_lahir">Tanggal lahir:</label>
-    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
-  </div>
-  <div class="form-group">
-    <label for="Nama_gadis_ibu_kandung">nama gadis ibu kandung:</label>
-    <input type="text" id="Nama_gadis_ibu_kandung" name="Nama_gadis_ibu_kandung" required>
-  </div>
+    <div class="header">Formulir Aplikasi Rekening Perorangan (AR-01)</div>
 
+    <div class="sub-header">DATA NASABAH - DATA PRIBADI</div>
+    <table class="form-table">
+        <tr>
+            <th>Kewarganegaraan</th>
+            <td class="form-group">
+                <label><input type="radio" name="kewarganegaraan" value="wni"> WNI</label>
+                <label><input type="radio" name="kewarganegaraan" value="wna"> WNA</label>
+            </td>
+            <th>Jenis Kelamin</th>
+            <td class="form-group">
+                <label><input type="radio" name="jenis_kelamin" value="pria"> Pria</label>
+                <label><input type="radio" name="jenis_kelamin" value="wanita"> Wanita</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Jenis Identitas</th>
+            <td colspan="3" class="form-group">
+                <select name="jenis_identitas">
+                    <option value="ktp">KTP</option>
+                    <option value="sim">SIM</option>
+                    <option value="paspor">Paspor</option>
+                </select>
+                Nomor Identitas: <input type="text" name="nomor_identitas">
+            </td>
+        </tr>
+        <tr>
+            <th>Nama Sesuai Identitas</th>
+            <td colspan="3"><input type="text" name="nama_identitas"></td>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td colspan="3"><input type="text" name="alamat"></td>
+        </tr>
+        <tr>
+            <th>Tempat & Tanggal Lahir</th>
+            <td colspan="3" class="form-group">
+                <input type="text" name="tempat_lahir" placeholder="Tempat Lahir">
+                <input type="date" name="tanggal_lahir">
+            </td>
+        </tr>
+    </table>
 
-  <div class="form-group">
-    <label for="alamat">Alamat:</label>
-    <input type="text" id="alamat" name="alamat" required>
-  </div>
-  <div class="form-group">
-    <label for="nomor_telepon">Nomor telepon:</label>
-    <input type="text" id="nomor_telepon" name="nomor_telepon" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-</div>
+    <div class="sub-header">DATA PEKERJAAN</div>
+    <table class="form-table">
+        <tr>
+            <th>Pekerjaan</th>
+            <td>
+                <select name="pekerjaan">
+                    <option value="asn">ASN</option>
+                    <option value="tnipolri">TNI/POLRI</option>
+                    <option value="swasta">Peg. Swasta</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </td>
+            <th>Bidang Usaha</th>
+            <td><input type="text" name="bidang_usaha"></td>
+        </tr>
+        <tr>
+            <th>Nama Tempat Kerja</th>
+            <td colspan="3"><input type="text" name="nama_tempat_kerja"></td>
+        </tr>
+        <tr>
+            <th>Alamat Kantor</th>
+            <td colspan="3"><input type="text" name="alamat_kantor"></td>
+        </tr>
+    </table>
 
-<div class="container">
-  <h3>2. DATA REKENING</h3>
-  <div class="form-group">
-    <label for="tipe_rekening">Tipe rekening:</label>
-    <select id="tipe_rekening" name="tipe_rekening" required>
-      <option value="tabungan">Tabungan</option>
-      <option value="giro">Giro</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="setoran_awal">Setoran awal:</label>
-    <input type="number" id="setoran_awal" name="setoran_awal" required>
-  </div>
-</div>
+    <div class="sub-header">DATA KEUANGAN</div>
+    <table class="form-table">
+        <tr>
+            <th>Penghasilan per Bulan</th>
+            <td colspan="3" class="form-group">
+                <label><input type="radio" name="penghasilan" value="10jt"> Rp0 - Rp10 Juta</label>
+                <label><input type="radio" name="penghasilan" value="50jt"> Rp10 Juta - Rp50 Juta</label>
+                <label><input type="radio" name="penghasilan" value="100jt"> Rp50 Juta - Rp100 Juta</label>
+                <label><input type="radio" name="penghasilan" value="100jtplus"> > Rp100 Juta</label>
+            </td>
+        </tr>
+    </table>
 
-<div class="form-group">
-  <input type="checkbox" id="syarat" name="syarat" required>
-  <label for="syarat">Saya setuju dengan syarat dan ketentuan yang berlaku.</label>
+    <div class="sub-header">DATA REKENING</div>
+    <table class="form-table">
+        <tr>
+            <th>Jenis Produk</th>
+            <td colspan="3">
+                <select name="jenis_produk">
+                    <option value="tabungan">Tabungan</option>
+                    <option value="giro">Giro</option>
+                    <option value="deposito">Deposito</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Mata Uang</th>
+            <td colspan="3">
+                <select name="mata_uang">
+                    <option value="idr">Rupiah</option>
+                    <option value="usd">USD</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <div class="section-title">Persetujuan Penawaran Produk</div>
+    <div class="form-group checkbox-group">
+        <label><input type="checkbox" name="penawaran" value="setuju"> Setuju Penawaran Produk</label>
+        <label><input type="checkbox" name="sms" value="setuju"> Setuju Penawaran SMS & Notifikasi Email</label>
+    </div>
+
+    <div class="notes">* Harap mengisi seluruh informasi yang dibutuhkan sesuai dengan data asli Anda.</div>
 </div>
 
 </body>
